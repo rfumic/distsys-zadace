@@ -5,7 +5,6 @@ def funkcija(lista, dic):
         and len(lista) == len(dic)
         and all(isinstance(x, int) for x in lista)
     )
-    # return {k: v if 5 <= v <= 10 else -1 for k, v in enumerate(lista)}
     return {k: v if 5 <= v <= 10 else -1 for (k, v) in zip(dic.keys(), lista)}
 
 
